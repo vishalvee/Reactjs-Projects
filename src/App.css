@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+
+
+
+
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #0f0f0f;
+  color: #fffef8;
+}
+nav {
+  justify-content: center;
+  display: flex;
+  margin-top: 48px;
+}
+nav ul {
+  background: #1c1c1c;
+  display: flex;
+  gap: 40px;
+  border-radius: 45px;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  background: #1c1c1c;
+  height: 42px;
+  width: 15%;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+/* main section */
+main{
+  /* border: 3px solid yellow; */
+  height: 817px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.topheading{
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+   font-size: 50px;
+line-height: 220%;
+}
+.topheading #title{
+
+    font-family: "Instrument Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.topheading #the{
+  /* border: 1px solid rgb(19, 175, 178); */
+   font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+ 
+}
+
+#bottom{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+#bottom p{
+  max-width:60%;
+  text-align: justify;
+  display: flex;
+  font-size: 20px;
+
+}
+#bottom .op{
+  max-width: 55%;
+  text-align: justify;
+  display: flex;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+ 
+}
+
+#bottom .op img{
+  
+  /* border: 3px solid red; */
+  margin-top: -5rem;
+  /* z-index: 1; */
+  background: transparent;
+  
+}
+
+
+.bt{
+  border-radius: 50px;
+  width: 181px;
+  height: 56px;
+  margin-top: 40px;
+  background-color: #fffef8;
+  border: none;
+  color: #0f0f0f;
+  font-size: 18px;
+  font-weight: 500;
+}
+.bt:hover{
+  cursor: pointer;
+  background-color: #c93737;
+  transition: 0.2s;
+  color: #fffef8;
+
+}
+.Gridbox{
+ 
+  gap: 32px;
+  margin: 0px 32px;
+  display: grid;
+  grid-template-columns: 1fr(00px);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+   grid-template-areas:
+  "box1 box2" 
+  "box3 box4";
+
+
+}
+.card{
+   width: 708px;
+  height: 708px; 
+  background-color: #203cd7;
+  border-radius: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#card2{
+  background-color: green;
+}
+#card3{
+  background-color: #2B2B2B;
+}
+#card4{
+  background-color: #ED732E;
+}
+
+#card4 #earth{
+  position: relative;
+  top: -35%;
+}
+#card4 img{
+  position: relative;
+  top: 30%;
+}
+.card p{
+  background: transparent;
+}
+
+.card img{
+  position: relative;
+  background: transparent;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+}
+.promo{
+  /* background-color: #d23535;
+  border: 3px solid rebeccapurple; */
+  /* max-width: 1106px; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.promo h1{
+
+font-size: 8rem;
+/* color: yellow; */
+ font-family: "Instrument Sans", serif;
+text-transform: uppercase;
+/* width: 900px; */
+}
+.promo .he{
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 49%;
+  text-align: center;
+  height: 400px;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+.promo p{
+  font-size: 3rem;
+  margin-top: 2rem;
+  font-family: "Instrument Serif", serif;
+  max-width: 85%;
+}
+.promo-img{
+  filter: saturate(0);
+}
+
+
+@media (max-width: 1024px) {
+  .Gridbox {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4";
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .promo h1 {
+    font-size: 4rem;
+  }
+
+  .promo p {
+    font-size: 2rem;
+  }
+}
+
+/* footer */
+.footer-box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.footer-box #mail{
+  width: 30%;
+  z-index: 1;
+  background: transparent;
+}
+
+.footer-box #bg-box{
+position: relative;
+top: -23rem;
+
+}
+#footerline{
+  font-size: 5rem;
+  position: relative;
+  top: -32rem;
+    font-family: "Instrument Serif", serif;
+
+}
